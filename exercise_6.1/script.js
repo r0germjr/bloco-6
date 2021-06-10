@@ -37,4 +37,33 @@ function createStateOptions() {
 
 createStateOptions();
   
+function verifyDate() {
+  const inputDate = document.getElementById('startDate');
+  if (inputDate.value.length === 0) {
+    return alert ('A data não foi preenchida');
+  }
 
+  let regex = /^\d\d\/\d\d\/\d\d\d\d$/; // regex do gabarito;
+
+  if(!regex.test(inputDate.value)) {
+    return alert('Data: Formato inválido!');
+  }
+
+  let splitted = inputDate.value.split('/');
+  let day = splitted[0];
+  let month = splitted[1];
+  let year = splitted[2];
+
+  if (day < 0 || day > 31) {
+    return alert('Dia inválido');
+  }
+
+  if (month < 0 || month > 12) {
+    return alert('Mês inválido');
+  }
+
+  if (year < 0) {
+    return alert('Ano inválido');
+  }
+  return true;
+}
