@@ -22,3 +22,9 @@ body {
     border-radius: 5px;
     border: 1px solid rgb(214, 217, 220);
   }
+
+.abstract-style {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
