@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CURRICULUM FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My curriculum form</h1>
+    </header>
+    
+    <form class="box-style" action="" method="GET">
+        
+        <div>
+            <fieldset>
+                <div class="line-content">
+                    <label for="full-name">Nome</label>
+                    <input type="text" name="full-name" id="full-name" required maxlength="40"><br><br>
+                </div>
+                
+                <div class="line-content">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" maxlength="50" required><br><br>
+                </div>
+
+                <div class="line-content">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" maxlength="11" id="cpf" required>
+                </div>
+
+                <div class="line-content">
+                    <label for="adress">Endereço:</label>
+                    <input type="text" maxlength="200" required id="adress">
+                </div>
+
+                <div class="line-content">
+                    <label for="city">Cidade:</label>
+                    <input type="text" maxlength="28" id="city" required>
+                </div>
+
+                <div class="line-content">
+                    <label for="states">Estado</label>
+                    <select name="states" id="states" required>
+                        <option value="Selecione seu estado" disabled selected></option>
+                    </select>
+                </div>
+
+            </fieldset>
+        </div>
+
+
+    </form>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
